@@ -3,10 +3,12 @@ use std::io;
 fn main() {
     loop {
         let mut operation = String::new();
-        println!("select operation!!!");
+        println!("-----------------------------");
+        println!("-----------------------------");
+        println!("输入选择!!!");
         println!("1--温度转换!!!");
         println!("2--斐波那契数列!!!");
-        println!("3---!!!");
+        println!("3--返回第一个单词!!!");
         io::stdin().read_line(&mut operation)
             .expect("failed to read line");
         let operation: u32 = match operation.trim().parse() {
@@ -19,7 +21,7 @@ fn main() {
         match operation {
             1 => temperature_transform(),
             2 => fbnq(),
-            3 => println!("operation error!!!"),
+            3 => first_word_befor(),
             _ => {
                 println!("operation error and break!!!");
                 break;
@@ -28,7 +30,8 @@ fn main() {
     }
 }
 
-
+//---------------------------------------------------------------------
+//温度转换
 fn temperature_transform() {
     const TEMPERATURE_COEFFICIENT: f64 = 33.8;
 
@@ -72,7 +75,8 @@ fn temperature_transform() {
     }
 }
 
-
+//---------------------------------------------------------------------
+//斐波那契数列
 fn fbnq() {
     println!("input length:");
     let mut operation2 = String::new();
@@ -93,7 +97,7 @@ fn fbnq() {
     println!("fbnq over");
 }
 
-
+//计算斐波那契数列
 fn fbnq2(x: i64) -> i64 {
     if x == 0 {
         x
@@ -102,4 +106,22 @@ fn fbnq2(x: i64) -> i64 {
     } else {
         fbnq2(x - 1) + fbnq2(x - 2)
     }
+}
+
+//---------------------------------------------------------------------
+//找到第一个单词，根据空格来断开的。
+fn first_word_befor() {
+    let mystr = String::from("hello world");
+    let rstr = first_word(&mystr[..]);
+    println!("return str:{}", rstr);
+}
+
+fn first_word(s: &str) -> &str {
+    let bytes = s.as_bytes();
+    for (i, &item) in bytes.iter().enumerate() {
+        if item == b' ' {
+            return &s[..i];
+        }
+    }
+    return &s[..];
 }

@@ -4,7 +4,10 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9dfb0b88-2a51-4c64-a89c-9832ef9c1225" name="变更" comment="rust练习，温度转换，以及斐波那契数列。" />
+    <list default="true" id="9dfb0b88-2a51-4c64-a89c-9832ef9c1225" name="变更" comment="rust练习，温度转换，以及斐波那契数列。">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -99,7 +102,8 @@
       <option name="presentableId" value="Default" />
       <updated>1676528998117</updated>
       <workItem from="1676528999448" duration="8740000" />
-      <workItem from="1676860920292" duration="2034000" />
+      <workItem from="1676860920292" duration="2515000" />
+      <workItem from="1676877772242" duration="222000" />
     </task>
     <task id="LOCAL-00001" summary="first commit 3">
       <created>1676532984275</created>
@@ -129,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676875164979</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="rust练习，温度转换，以及斐波那契数列。">
+      <created>1676875612965</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676875612965</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
